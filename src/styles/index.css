@@ -1,0 +1,130 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+@font-face {
+  font-family: FontAwesome6ProRegular;
+  src: url(./fonts/FontAwesome6ProRegular400.otf);
+}
+
+@font-face {
+  font-family: FontAwesome6ProSolid;
+  src: url(./fonts/FontAwesome6ProSolid900.otf);
+}
+
+@font-face {
+  font-family: FontAwesome6ProLight;
+  src: url(./fonts/FontAwesome6ProLight300.otf);
+}
+
+i {
+  font-style: normal !important
+}
+
+.circle-phone::before {
+  font-family: FontAwesome6ProLight !important;
+  content: '\e11b';
+}
+
+
+:root {
+  --fp-green: #00563F;
+  --fp-dark-green: #003D2D;
+  --fp-medium-green: #3BB982;
+  --fp-bright-green: #A6E483;
+  --fp-teal: #00D1C3;
+  --fp-bright-blue: #27AFE7;
+  --fp-dark-blue: #10398C;
+  --fp-purple: #472361;
+  --fp-yellow: #FFDE00;
+  --fp-black: #000000;
+  --fp-white: #FFFFFF;
+  --fp-gray-5: #F2F2F2;
+  --fp-gray-40: #999999;
+  --fp-gray-80: #333333;
+}
+
+/* Ejemplo de uso: background-color: var(--fp-green); */
+
+/* Utilidades Tailwind para Foster + Partners */
+.bg-fp-green { @apply bg-[color:var(--fp-green)]; }
+.bg-fp-dark-green { @apply bg-[color:var(--fp-dark-green)]; }
+.bg-fp-medium-green { @apply bg-[color:var(--fp-medium-green)]; }
+.bg-fp-bright-green { @apply bg-[color:var(--fp-bright-green)]; }
+.bg-fp-teal { @apply bg-[color:var(--fp-teal)]; }
+.bg-fp-bright-blue { @apply bg-[color:var(--fp-bright-blue)]; }
+.bg-fp-dark-blue { @apply bg-[color:var(--fp-dark-blue)]; }
+.bg-fp-purple { @apply bg-[color:var(--fp-purple)]; }
+.bg-fp-yellow { @apply bg-[color:var(--fp-yellow)]; }
+.bg-fp-black { @apply bg-[color:var(--fp-black)]; }
+.bg-fp-white { @apply bg-[color:var(--fp-white)]; }
+.bg-fp-gray-5 { @apply bg-[color:var(--fp-gray-5)]; }
+.bg-fp-gray-40 { @apply bg-[color:var(--fp-gray-40)]; }
+.bg-fp-gray-80 { @apply bg-[color:var(--fp-gray-80)]; }
+
+.text-fp-green { @apply text-[color:var(--fp-green)]; }
+.text-fp-dark-green { @apply text-[color:var(--fp-dark-green)]; }
+.text-fp-medium-green { @apply text-[color:var(--fp-medium-green)]; }
+.text-fp-bright-green { @apply text-[color:var(--fp-bright-green)]; }
+.text-fp-teal { @apply text-[color:var(--fp-teal)]; }
+.text-fp-bright-blue { @apply text-[color:var(--fp-bright-blue)]; }
+.text-fp-dark-blue { @apply text-[color:var(--fp-dark-blue)]; }
+.text-fp-purple { @apply text-[color:var(--fp-purple)]; }
+.text-fp-yellow { @apply text-[color:var(--fp-yellow)]; }
+.text-fp-black { @apply text-[color:var(--fp-black)]; }
+.text-fp-white { @apply text-[color:var(--fp-white)]; }
+.text-fp-gray-5 { @apply text-[color:var(--fp-gray-5)]; }
+.text-fp-gray-40 { @apply text-[color:var(--fp-gray-40)]; }
+.text-fp-gray-80 { @apply text-[color:var(--fp-gray-80)]; }
+
+/* Iconos para inputs de formulario de contacto */
+.icon-user::before {
+  font-family: FontAwesome6ProLight !important;
+  content: '\f007';
+}
+.icon-envelope::before {
+  font-family: FontAwesome6ProLight !important;
+  content: '\f0e0';
+}
+.icon-whatsapp::before {
+  font-family: FontAwesome6ProLight !important;
+  content: '\f232';
+}
+.icon-phone::before {
+  font-family: FontAwesome6ProLight !important;
+  content: '\f095';
+}
+.icon-message::before {
+  font-family: FontAwesome6ProLight !important;
+  content: '\f27a';
+}
+
+/* Iconos para redes sociales en el footer */
+.icon-pinterest::before {
+  font-family: FontAwesome6ProLight !important;
+  content: '\f0d2';
+}
+.icon-instagram::before {
+  font-family: FontAwesome6ProLight !important;
+  content: '\f16d';
+}
+.icon-linkedin::before {
+  font-family: FontAwesome6ProLight !important;
+  content: '\f0e1';
+}
+
+.input-with-icon {
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  pointer-events: none;
+  font-size: 1.25rem;
+  z-index: 10;
+}
+
+
